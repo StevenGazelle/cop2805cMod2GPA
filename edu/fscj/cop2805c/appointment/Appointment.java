@@ -33,11 +33,11 @@ public class Appointment {
     @Override
     public String toString(){
         String retString = "Your current appointment:\n";
-        retString += ("\tTitle: " + title + "\n" +
-                "\tDescription: " + description + "\n" +
-                "\tContact: " + contact + "\n" +
-                "\tAppt Date/Time: " + appointmentTime + "\n" +
-                "\tReminder: " + reminderTime);
+        retString += ("Title: " + title + "\n" +
+                "Description: " + description + "\n" +
+                "Contact: " + contact + "\n" +
+                "Appt Date/Time: " + appointmentTime + "\n" +
+                "Reminder: " + reminderTime).indent(10);
 
         return retString;
     }
@@ -47,8 +47,8 @@ public class Appointment {
                 "StevenGsell@email.com", "904-555-5555",
                 ZoneId.systemDefault(), REMINDER.TEXT);
 
-        Appointment appt = new Appointment("Test Appointment",
-                "This is a test appointment", apptContact,
+        Appointment appt = new Appointment("CAT scan",
+                "Meow meow meow", apptContact,
                 ZonedDateTime.now().plusWeeks(2));
 
         System.out.println(appt);
