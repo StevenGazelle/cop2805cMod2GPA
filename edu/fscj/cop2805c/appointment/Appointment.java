@@ -50,7 +50,7 @@ public class Appointment {
                 "StevenGsell@email.com", "904-555-5555",
                 ZoneId.systemDefault(), REMINDER.TEXT);
 
-        //create appointment type
+        //create appointment
         Appointment appt = new Appointment("CAT scan", "Meow meow meow");
 
         //schedule appointment through contact
